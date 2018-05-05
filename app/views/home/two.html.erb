@@ -1,0 +1,69 @@
+<!--두번째 페이지에서는
+매칭된 동행이랑 
+루트가 나올거에요!-->
+<br>
+
+<br><br>
+
+
+<strong>여행 루트</strong>
+
+<br><br>
+첫번째 코스
+<br>
+ 
+<% if @users.movie == "loco" %>
+    <%= @route1_1 %>
+<% elsif @users.movie =="thriller" %>
+    <%= @route1_2 %>
+<% elsif @users.movie == "SF" %>
+    <%= @route1_3%>
+<% elsif @users.movie == "comedy" %>
+    <%= @route1_4 %>
+<% end %>
+
+<br>
+두번째 코스
+<br>
+<% if @users.sports == "running" %>
+    <%=@route2_1 %>
+<% elsif @users.sports == "baseball" %>
+    <%=@route2_2 %>
+<% elsif @users.sports == "soccer" %>
+    <%=@route2_3 %>
+<% elsif @users.sports == "skate" %>
+    <%=@route2_4 %>
+<% elsif @users.sports == "swimming" %>
+    <%=@route2_5 %>
+<%end%>
+<br>
+세번째 코스
+<br>
+<% if @users.music == "kpop" %>
+    <%=@route3_1 %>
+<% elsif @users.music == "hiphop" %>
+    <%=@route3_2 %>
+<% elsif @users.music == "jazz" %>
+    <%=@route3_3 %>
+<% elsif @users.music == "classic" %>
+    <%=@route3_4 %>
+<% elsif @users.music == "ballade" %>
+    <%=@route3_5 %>
+<%end%>
+<br>
+네번째 코스
+<br>
+<% if @users.travelwhere == "korea" %>
+    <%=@route4_1 %>
+<% elsif @users.travelwhere == "europe" %>
+    <%=@route4_2 %>
+<% elsif @users.travelwhere == "africa" %>
+    <%=@route4_3 %>
+<% elsif @users.travelwhere == "namerica" %>
+    <%=@route4_4 %>
+<% elsif @users.travelwhere == "samerica" %>
+    <%=@route4_5 %>
+<%end%>
+
+
+<a href = "/home/three">세번째 페이지로</a>

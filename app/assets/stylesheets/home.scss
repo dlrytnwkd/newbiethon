@@ -1,0 +1,61 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*!
+ * Start Bootstrap - Agency v4.1.1 (https://startbootstrap.com/template-overviews/agency)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
+ */
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff);
+
+
+.dropdown-menu {
+}
+
+.dropdown-menu > li {
+    display: inline-block;
+}
+
+.sec_cover {
+    background-color: #f0f8ff;
+    text-align: center;
+    height: 1000px;
+    box-shadow: 0 2px 8px #999;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.cover {
+    box-sizing: border-box;
+    top: 0;
+    height: 900px;
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+    z-index: 100;
+    margin-bottom: 50px;
+    background-size: 100% 100%;
+    background-image: url(/1.jpg);
+    box-shadow: 0 2px 8px #999;
+}
+
+p {
+  font-family: 'Titan One', cursive;
+  margin-top : 100px;
+}
+
+h5 { 
+    font-size: 20px;
+    font-family: 'NanumSquare', sans-serif !important;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'NanumSquare', sans-serif !important;
+  
+}
