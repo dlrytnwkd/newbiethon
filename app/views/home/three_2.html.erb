@@ -1,6 +1,19 @@
-여행이 진행 중입니다~
+<div class= "text-middle">
 
 
 <br><br>
-세번째 루트 다 완료하셨나요?<br>
-<a href = "/home/three_3">그렇다면 다음 루트로! </a>
+음악 잘 들으셨나요?<br>
+<% if @route3 == "kpop" %>
+    참 신나죠?
+<% elsif @route3 == "hiphop" %>
+    예이
+<% elsif @route3== "jazz" %>
+    재즈는 참 흥미로워요
+<% elsif @route3 == "classic" %>
+    힐링하셨나요?
+<% elsif @route3 == "ballade" %>
+    편안해지셨죠?
+<%end%>
+<br>
+<button type="button" class="btn btn-default"><a href = "/home/three_3">이제 마지막 코스로! </a></button>
+</div>

@@ -14,16 +14,67 @@
  *= require_self
  */
 @import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
-@import url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff);
+@import url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.css);
+@import url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff);
+@font-face { font-family: 'NanumSquareRound'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'SangSangShinb7'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff') format('woff'); font-weight: normal; font-style: normal; }
 
+nav {
+    box-shadow: 0 2px 8px #999;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+#sec_cover {
+    background-color: #f0f8ff;
+    text-align: center;
+    height: 1000px;
+    box-shadow: 0 2px 8px #999;
+}
 
-h5 { 
+#third_cover {
+    background-color: #f0f8ff;
+    text-align: center;
+    height: 1000px;
+    box-shadow: 0 2px 8px #999;
+}
+
+.nav_logo {
+    font-family: 'SangSangShinb7';
+    font-size: 40px;
+    padding: 20;
+}
+
+.nav_logo {
+    font-family: 'SangSangShinb7' format('woff'); font-weight: normal; font-style: normal;
+}
+
+.title {
+    font-family: 'SangSangShinb7';
+    font-size: 80px;
+    padding-top: 20px;
+}
+h5,p { 
     font-size: 20px;
-    font-family: 'NanumSquare', sans-serif !important;
+    font-family: 'NanumSquareRound', sans-serif !important;
+}
+h4 { 
+    font-size: 30px;
+    font-family: 'NanumSquareRound', sans-serif !important;
 }
 
 h1 {
   font-size: 40px;
-  font-family: 'NanumSquare', sans-serif !important;
+  font-family: 'NanumSquareRound', sans-serif !important;
   
 }
+
+.text-center{
+    padding-top: 20%;
+}
+
+.text-middle{
+    padding-top: 10%;
+    text-align: center;
+}
+

@@ -1,0 +1,120 @@
+    <%= @print_title %>
+    <% @sport.each do |s| %>
+        <%= s %>
+    <%end%>
+    
+    <% User.each do |old_users| %>
+        <% if (@users.movie == old_users.movie %>
+            <% if (@users.movie == 'loco')%>
+                <% @print_title %>
+            <% elsif(@users.movie == 'thriller'%>
+            <% elsif(@users.movie == 'SF' %>
+            <% elsif(@users.movie == 'comedy' %>
+            <% end %>
+        <% end %>
+    <% end %>
+    
+    <!--<% #if @route1 == "loco" %>-->
+    <!--    <%= #@route1_1 %>-->
+    <!--<% #elsif @route1 =="thriller" %>-->
+    <!--    <%= #@route1_2 %>-->
+    <!--<%# #elsif @route1 == "SF" %>-->
+    <!--    <%= @route1_3 %>-->
+    <!--<% #elsif @route1 == "comedy" %>-->
+    <!--    <%= @route1_4 %>-->
+    <!--<% #end %>-->
+    
+    <!--<br>-->
+    <!--<h5>두번째 코스</h5>-->
+    <!--<br>-->
+    <!--<% #if @route2 == "running" %>-->
+    <!--    <%= #@route2_1 %>-->
+    <!--<% #elsif @route2 == "baseBall" %>-->
+    <!--    <%=@route2_2 %>-->
+    <!--<% #elsif @route2 == "soccer" %>-->
+    <!--    <%=@route2_3 %>-->
+    <!--<% #elsif @route2 == "skate" %>-->
+    <!--    <%=@route2_4 %>-->
+    <!--<% #elsif @route2 == "swimming" %>-->
+    <!--    <%=@route2_5 %>-->
+    <!--<% #end%>-->
+    <!--<br><br>-->
+    <!--<h5>세번째 코스</h5>-->
+    <!--<br>-->
+    <!--<% #if @route3 == "kpop" %>-->
+    <!--    <%=@route3_1 %>-->
+    <!--<% #elsif @route3 == "hiphop" %>-->
+    <!--    <%=@route3_2 %>-->
+    <!--<% #elsif @route3 == "jazz" %>-->
+    <!--    <%=@route3_3 %>-->
+    <!--<% #elsif @route3 == "classic" %>-->
+    <!--    <%=@route3_4 %>-->
+    <!--<% #elsif @route3 == "ballade" %>-->
+    <!--    <%=@route3_5 %>-->
+    <!--<% #end %>-->
+    <!--<br><br>-->
+    <!--<h5>네번째 코스</h5>-->
+    <!--<br>-->
+    <!--<% #if @route4 == "piece" %>-->
+    <!--    <%=@route4_1 %>-->
+    <!--<% #elsif @route4 == "craft" %>-->
+    <!--    <%=@route4_2 %>-->
+    <!--<% #elsif @route4 == "painting" %>-->
+    <!--    <%= #@route4_3 %>-->
+    <!--<% #elsif @route4 == "design" %>-->
+    <!--    <%= #@route4_4 %>-->
+    <!--<% #elsif @route4 == "photography" %>-->
+    <!--    <%= #@route4_5 %>-->
+    <!--<% #end%>-->
+    ## 위는 two.html에 있던 코드
+    
+    
+        <%# User.each do |old_users| %>
+        <% #if (@users.movie == old_users.movie %>
+            <% #if (@users.movie == 'loco')%>
+                <% @print_title %>
+            <% #elsif(@users.movie == 'thriller'%>
+            <% #elsif(@users.movie == 'SF' %>
+            <% #elsif(@users.movie == 'comedy' %>
+            <% #end %>
+        <% #end %>
+    <%# end %>
+    
+    
+    ## 밑으로 css 백업
+    
+    .rounded-circle {
+    border-radius: 50%!important;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+  .timeline > li {
+    min-height: 170px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+    

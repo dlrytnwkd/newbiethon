@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  loco: MyString
+  thriller: MyString
+  SF: MyString
+  comedy: MyString
+
+two:
+  loco: MyString
+  thriller: MyString
+  SF: MyString
+  comedy: MyString

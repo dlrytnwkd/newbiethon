@@ -1,6 +1,23 @@
-여행이 진행 중입니다~
+<div class= "text-middle">
+
 
 
 <br><br>
-두번째 루트 다 완료하셨나요?<br>
-<a href = "/home/three_2">그렇다면 다음 루트로! </a>
+운동 잘 하셨나요?<br>
+<% if  @route2 == "running" %>
+   같이 달리니까 참 상쾌하죠?
+<% elsif @route2  == "Baseball" %>
+    야구는 정말 재미있어요
+<% elsif @route2  == "soccer" %>
+    축구는 참 짜릿하죠
+<% elsif @route2  == "skate" %>
+    타다가 넘어지진 않았나요?
+<% elsif @route2  == "swimming" %>
+    진짜 바다도 가고 싶죠?
+<%end%>
+
+<br>
+
+<br>
+<button type="button" class="btn btn-default"><a href = "/home/three_2">재밌게 즐겼다면 다음 코스로! </a></button>
+</div>

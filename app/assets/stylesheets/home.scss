@@ -8,17 +8,51 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 @import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
-@import url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff);
+@import url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.css);
+@import url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.css);
 
+nav {
+    box-shadow: 0 2px 8px #999;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+.nav_logo {
+    font-family: 'SangSangShinb7';
+    font-size: 40px;
+    padding: 20;
+}
 
 .dropdown-menu {
+
 }
 
 .dropdown-menu > li {
     display: inline-block;
 }
+.to_big {
+    font-family: 'NanumSquareRound';
+    font-size: 23px;
+    color: #2A5E23;
 
-.sec_cover {
+}
+
+.to_give_padding {
+    font-family: 'SangSangShinb7';
+    font-size: 80px;
+    padding-top: 20px;
+    
+}
+
+#sec_cover {
+    background-color: #f0f8ff;
+    text-align: center;
+    height: 1000px;
+    box-shadow: 0 2px 8px #999;
+}
+
+#third_cover {
     background-color: #f0f8ff;
     text-align: center;
     height: 1000px;
@@ -42,20 +76,32 @@
     background-size: 100% 100%;
     background-image: url(/1.jpg);
     box-shadow: 0 2px 8px #999;
+    
 }
 
-p {
-  font-family: 'Titan One', cursive;
-  margin-top : 100px;
+.cover_title {
+    padding-top: 20%;
+    font-family: 'NanumSquareRound', sans-serif;
+    font-size: 60px;
+    color: white;
 }
 
-h5 { 
+h5,p { 
     font-size: 20px;
-    font-family: 'NanumSquare', sans-serif !important;
+    font-family: 'NanumBarunpen', sans-serif !important;
 }
 
 h1 {
   font-size: 40px;
   font-family: 'NanumSquare', sans-serif !important;
   
+}
+
+.text-center{
+    padding-top: 20%;
+}
+
+.text-middle{
+    padding-top: 10%;
+    text-align: center;
 }

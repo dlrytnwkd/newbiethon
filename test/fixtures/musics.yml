@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kpop: MyString
+  hiphop: MyString
+  jazz: MyString
+  classic: MyString
+  ballade: MyString
+
+two:
+  kpop: MyString
+  hiphop: MyString
+  jazz: MyString
+  classic: MyString
+  ballade: MyString

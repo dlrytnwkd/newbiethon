@@ -10,7 +10,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string  :movie
       t.string  :sports
       t.string  :music
-      t.string  :travelwhere
+      t.string  :art
       t.string  :travelhow
       t.timestamps null: false
     end

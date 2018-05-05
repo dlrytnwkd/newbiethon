@@ -1,33 +1,41 @@
-아마 피드백 페이지
+<div class= "text-middle">
 
+    <br>
+    <div>
+        <form>
+            <p>
+                메이트와는 괜찮았나요?<br><br>
+    
+                메이트 이름: <input type="text" name="name"><br><br>
+                평가: <input type="number" name="rating"  min="1" max="5">
+            </p>
+            <br>
+            <button type="submit" class="btn btn-green"><a href = "/home/last">제출</a></button>
+        </form>
+    </div>
 
-<br>
-<form>
-<p>메이트와는 괜찮았나요??
-메이트 이름: <input type="text" name="name">
-평가: <input type="number" name="rating"  min="1" max="5">
-</p>
-<br>
-<button type="submit">제출</button>
-</form>
-
-<p>당신의 여행은 어땠나요??<br>
-    후기를 작성해주세요
-</p><!-- 라이브리 시티 설치 코드 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC8zNjI2MC8xMjc5NQ==">
-	<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-
-       if (typeof LivereTower === 'function') { return; }
-
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-	</script>
-<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+    <br>
+    <div>
+        <p>당신의 여행은 어땠나요? 즐거웠나요?<br><br>
+            후기를 작성해주세요^^
+        </p>
+        <!-- 라이브리 시티 설치 코드 -->
+        <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjI2MC8xMjc5NQ==">
+        	<script type="text/javascript">
+               (function(d, s) {
+                   var j, e = d.getElementsByTagName(s)[0];
+        
+                   if (typeof LivereTower === 'function') { return; }
+        
+                   j = d.createElement(s);
+                   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                   j.async = true;
+        
+                   e.parentNode.insertBefore(j, e);
+               })(document, 'script');
+        	</script>
+        <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+        </div>
+        <!-- 시티 설치 코드 끝 -->
+    </div>
 </div>
-<!-- 시티 설치 코드 끝 -->

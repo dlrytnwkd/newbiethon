@@ -1,6 +1,20 @@
-여행이 진행 중입니다~
 
+<div class= "text-middle">
 
 <br><br>
-네번째 루트 다 완료하셨나요?<br>
-<a href = "/home/four">그렇다면 다음 루트로! </a>
+잘 보셨나요??<br>
+<% if @route4 == "piece" %>
+    조각품들은 정말 다 예술이에요
+<% elsif @route4  == "craft" %>
+    아기자기해서 귀여웠죠?
+<% elsif @route4  == "painting" %>
+    눈이 정화되었어요
+<% elsif @route4  == "design" %>
+    참 재치있는 디자인들이었어요!
+<% elsif @route4  == "photography" %>
+    사진 잘 찍고 싶어졌죠?
+<%end%>
+<br>
+<br>
+<button type="button" class="btn btn-default"><a href = "/home/four">여행을 마무리합시다</a></button>
+</div>

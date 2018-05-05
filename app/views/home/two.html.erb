@@ -1,69 +1,31 @@
 <!--두번째 페이지에서는
 매칭된 동행이랑 
 루트가 나올거에요!-->
-<br>
 
-<br><br>
+<div id="third_cover">    
+        <h5 style="padding-top: 5%;">
+            
+        <h4>당신의 여행메이트은 <%= @friend %> 입니다</h4>
+        <%@travel_title.each do |t|%>
+        <%= t %>
+        <% end %>
+    </h5>
+    
+    <div class="to_give_padding">여행 루트</div>
+    <hr>
+    <br><br>
+    <h5>첫번째 코스</h5>
+    <br>
+    <div class="timeline-image">
+    <img src="/2_1.jpg" class="rounded mx-auto d-block" style="width: 200px; height:200px;">
+    </div>
+    <%= @print_title[0].loco %>
+    <%= @sport %>
+    
 
-
-<strong>여행 루트</strong>
-
-<br><br>
-첫번째 코스
-<br>
- 
-<% if @users.movie == "loco" %>
-    <%= @route1_1 %>
-<% elsif @users.movie =="thriller" %>
-    <%= @route1_2 %>
-<% elsif @users.movie == "SF" %>
-    <%= @route1_3%>
-<% elsif @users.movie == "comedy" %>
-    <%= @route1_4 %>
-<% end %>
-
-<br>
-두번째 코스
-<br>
-<% if @users.sports == "running" %>
-    <%=@route2_1 %>
-<% elsif @users.sports == "baseball" %>
-    <%=@route2_2 %>
-<% elsif @users.sports == "soccer" %>
-    <%=@route2_3 %>
-<% elsif @users.sports == "skate" %>
-    <%=@route2_4 %>
-<% elsif @users.sports == "swimming" %>
-    <%=@route2_5 %>
-<%end%>
-<br>
-세번째 코스
-<br>
-<% if @users.music == "kpop" %>
-    <%=@route3_1 %>
-<% elsif @users.music == "hiphop" %>
-    <%=@route3_2 %>
-<% elsif @users.music == "jazz" %>
-    <%=@route3_3 %>
-<% elsif @users.music == "classic" %>
-    <%=@route3_4 %>
-<% elsif @users.music == "ballade" %>
-    <%=@route3_5 %>
-<%end%>
-<br>
-네번째 코스
-<br>
-<% if @users.travelwhere == "korea" %>
-    <%=@route4_1 %>
-<% elsif @users.travelwhere == "europe" %>
-    <%=@route4_2 %>
-<% elsif @users.travelwhere == "africa" %>
-    <%=@route4_3 %>
-<% elsif @users.travelwhere == "namerica" %>
-    <%=@route4_4 %>
-<% elsif @users.travelwhere == "samerica" %>
-    <%=@route4_5 %>
-<%end%>
+    <br>
+    <a class="btn btn-outline-warning" href="/home/three" role="button" style="background-color: #FFFFFF; box-shadow: 0 2px 8px #999;"><div class="to_big">여행을 시작합시다</div></a>
+    <!--<a href = "/home/three" width="50">세번째 페이지로</a>-->
+</div>
 
 
-<a href = "/home/three">세번째 페이지로</a>

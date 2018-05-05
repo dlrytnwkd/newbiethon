@@ -2,18 +2,25 @@ Rails.application.routes.draw do
     root 'home#first'
     
   get 'home/first' => 'home#first'
+  
+  get '/index' => 'home#first'
 
   get 'home/two' => 'home#two'
   post 'home/two' =>'home#two'
 
   get 'home/three'=>'home#three'
   
+  get '/epilogue' => 'home#four'
   get 'home/four' => 'home#four'
   post 'home/four' => 'home#four'
   
   get 'home/three_1' => 'home#three_1'
+
     get 'home/three_2' => 'home#three_2'
+    
       get 'home/three_3' => 'home#three_3'
+      
+      get 'home/last' =>'home#last'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

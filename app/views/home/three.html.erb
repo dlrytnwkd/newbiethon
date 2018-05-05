@@ -1,6 +1,41 @@
-여행이 진행 중입니다~
-
+<div class= "text-middle">
 
 <br><br>
-첫번째 루트 다 완료하셨나요?<br>
-<button type="button" class="btn btn-default"><a href = "/home/three_1">그렇다면 다음 루트로! </a></button> 
+
+첫번째 코스인 영화 재밌게 보셨나요?
+<br><br>
+<% if @route1 == "loco" %>
+    달달하셨나요? ㅎㅎ 
+<% elsif @route1 =="thriller" %>
+    너무 무서웠죠 ㅠ 다신 못 볼 듯
+<% elsif  @route1 == "SF" %>
+    흥미진진했죠?
+<% elsif @route1 == "comedy" %>
+    너무 웃겼죠? 기분 전환되셨나요?
+<% end %>
+
+영화를 재밌게 보셨다면 별점을 매겨 주세요!
+<!-- Split button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default">별점</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu" >
+    <li><a href="#">★</a></li>
+     <li class="divider"></li>
+    <li><a href="#">★★</a></li>
+     <li class="divider"></li>
+    <li><a href="#">★★★</a></li>
+     <li class="divider"></li>
+   <li><a href = "#">★★★★</a></li>
+    <li class="divider"></li>
+    <li><a href = "#">★★★★★</a></li>
+    <li class="divider"></li>
+    
+  </ul>
+</div>
+<br>
+<button type="button" class="btn btn-default"><a href = "/home/three_1">그렇다면 다음 코스로! </a></button> 
+</div>
