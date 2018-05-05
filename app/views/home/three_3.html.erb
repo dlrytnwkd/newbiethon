@@ -1,20 +1,23 @@
 
-<div class= "text-middle">
+<div class= "text-middle"> <div class="to_give_padding">
 
+<div id="cover_3-3">
 <br><br>
-잘 보셨나요??<br>
-<% if @route4 == "piece" %>
-    조각품들은 정말 다 예술이에요
-<% elsif @route4  == "craft" %>
-    아기자기해서 귀여웠죠?
-<% elsif @route4  == "painting" %>
-    눈이 정화되었어요
-<% elsif @route4  == "design" %>
-    참 재치있는 디자인들이었어요!
-<% elsif @route4  == "photography" %>
-    사진 잘 찍고 싶어졌죠?
-<%end%>
+    잘 보셨나요??<br>
+    <% if @a_genre  == "piece" %>
+        조각품들은 정말 다 예술이에요
+    <% elsif @a_genre   == "craft" %>
+        아기자기해서 귀여웠죠?
+    <% elsif @a_genre   == "painting" %>
+        눈이 정화되었어요
+    <% elsif @a_genre   == "design" %>
+        참 재치있는 디자인들이었어요!
+    <% elsif @a_genre   == "photography" %>
+        사진 잘 찍고 싶어졌죠?
+    <%end%>
+
 <br>
 <br>
-<button type="button" class="btn btn-default"><a href = "/home/four">여행을 마무리합시다</a></button>
+<a class="btn btn-outline-warning" href="/home/four" role="button" style="background-color: #FFFFFF; box-shadow: 0 2px 8px #999;"><div class="to_big">여행을 마무리합시다</div></a>
+</div></div>
 </div>

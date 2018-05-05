@@ -1,23 +1,23 @@
-<div class= "text-middle">
+<div class= "text-middle"><div class="to_give_padding">
 
 
-
+<div id="cover_3-1">    
 <br><br>
-운동 잘 하셨나요?<br>
-<% if  @route2 == "running" %>
-   같이 달리니까 참 상쾌하죠?
-<% elsif @route2  == "Baseball" %>
-    야구는 정말 재미있어요
-<% elsif @route2  == "soccer" %>
-    축구는 참 짜릿하죠
-<% elsif @route2  == "skate" %>
-    타다가 넘어지진 않았나요?
-<% elsif @route2  == "swimming" %>
-    진짜 바다도 가고 싶죠?
-<%end%>
+    운동 잘 하셨나요?<br>
+    <% if  @s_name == "running" %>
+       같이 달리니까 참 상쾌하죠?
+    <% elsif @s_name  == "Baseball" %>
+        야구는 정말 재미있어요
+    <% elsif @s_name  == "soccer" %>
+        축구는 참 짜릿하죠
+    <% elsif @s_name  == "skate" %>
+        타다가 넘어지진 않았나요?
+    <% elsif @s_name  == "swimming" %>
+        진짜 바다도 가고 싶죠?
+    <%end%>
+
+
 
 <br>
-
-<br>
-<button type="button" class="btn btn-default"><a href = "/home/three_2">재밌게 즐겼다면 다음 코스로! </a></button>
-</div>
+<a class="btn btn-outline-warning" href="/home/three_2" role="button" style="background-color: #FFFFFF; box-shadow: 0 2px 8px #999;"><div class="to_big">재밌게 즐겼다면 다음 코스로!</div></a>
+</div></div></div>

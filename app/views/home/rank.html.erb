@@ -1,0 +1,15 @@
+
+<br>
+
+<br>
+
+<br>
+<%= @test %>
+<%= @user_ranker %>
+<%= @rankerNum%>
+
+<% @user_all.each do |rankers| %>
+    <p><%= rankers.rating %><p>
+        <p><%= rankers.rating.next %></p>
+    
+<% end %>

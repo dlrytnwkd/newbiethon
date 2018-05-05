@@ -2,30 +2,63 @@
 매칭된 동행이랑 
 루트가 나올거에요!-->
 
+
 <div id="third_cover">    
-        <h5 style="padding-top: 5%;">
-            
-        <h4>당신의 여행메이트은 <%= @friend %> 입니다</h4>
-        <%@travel_title.each do |t|%>
-        <%= t %>
-        <% end %>
-    </h5>
-    
+        <p style="padding-top: 10%;">
+            <i class="fas fa-user-friends fa-5x"></i>
+            <h4>당신의 여행메이트는 <%= @friend %> 입니다</h4><br>
+            <h4>평점: <%= @friend_rate %></h4>
+        </p>
     <div class="to_give_padding">여행 루트</div>
-    <hr>
-    <br><br>
-    <h5>첫번째 코스</h5>
     <br>
-    <div class="timeline-image">
-    <img src="/2_1.jpg" class="rounded mx-auto d-block" style="width: 200px; height:200px;">
-    </div>
-    <%= @movie_title[0].loco %>
-    <%= @sport_name %>
-    
+    <br>
+        <h5>첫번째 테마 - 영화</h5>
+        <h3><%= @movie_title %></h3><br>
+        <%=@users.name %>님과 좋아하는 영화 장르가 <%= @users.movie %>로 같네요.
+        <br>
+        현재 상영중인 <%= @movie_title %>를 보는 건 어떤가요?<br><br> <a class="btn btn-outline-warning" href="http://www.cgv.co.kr/ticket/" role="button" style="background-color: #FFFFFF; box-shadow: 0 2px 8px #999;"><div class="to_big">예매하기</div></a>
+<br><br>
+        <!--현재 상영중인 <%= @movie_title %>를 보는 건 어떤가요?<br> <a href ="http://www.cgv.co.kr/ticket/">->예매하기</a><br>-->
 
-    <br>
-    <a class="btn btn-outline-warning" href="/home/three" role="button" style="background-color: #FFFFFF; box-shadow: 0 2px 8px #999;"><div class="to_big">여행을 시작합시다</div></a>
-    <!--<a href = "/home/three" width="50">세번째 페이지로</a>-->
+        <img src="/2_1.jpg" class="rounded mx-auto d-block rounded-circle" style="width: 200px; height: 200px;" >
+        <img src="/arrow.png" style="width: 50px; height: 30px;"> <br>
+        <h5>두번째 테마 - 운동</h5>
+       <br>
+        <%=@users.name %>님과 좋아하는 액티비티가 <%= @users.sports %>로 같네요.<br>
+        같이  <%= @sport_name %>에 가 보는 건 어떨까요?
+         05.12(토)에 열리는 한화 이글스 vs lg트윈스경기를 보러 가보세요.
+        
+        <br><br> <a class="btn btn-outline-warning" href="http://www.ticketlink.co.kr/sports/baseball" role="button" style="background-color: #FFFFFF; box-shadow: 0 2px 8px #999;"><div class="to_big">예매하기</div></a>
+<br><br>
+        <!--<a href = "http://www.ticketlink.co.kr/sports/baseball">->예매하기</a>-->
+        <img src="/2_2.jpg" class="rounded mx-auto d-block rounded-circle" style="width: 200px; height: 200px;" >
+        <img src="/arrow.png" style="width: 50px; height: 30px;"> <br>
+        <h5>세번째 테마 - 음악</h5>
+       <h3></h3> <%= @music_title %></h3><br>
+        <%=@users.name %>님과 좋아하는 음악 장르가 <%= @users.music %>로 같아요.<br>
+        좋은 재즈음악을 많이 틀어주는 이태원 재즈바 ‘올댓재즈’를 가보는 건 어떨까요?
+        <br><br> <a class="btn btn-outline-warning" href="https://www.google.co.kr/maps/dir/''/%EC%9D%B4%ED%83%9C%EC%9B%90+%EC%98%AC%EB%8C%93%EC%9E%AC%EC%A6%88/@37.5195466,126.98
+        84814,15.46z/data=!4m8!4m7!1m0!1m5!1m1!1s0x357ca249f7d29cbb:0x169e8322cc265397!2m2!1d126.9945703!2d37.5350419" role="button" style="background-color: #FFFFFF; box-shadow: 0 2px 8px #999;"><div class="to_big">찾아가기</div></a>
+<br><br>
+        <img src="/2_3.jpg" class="rounded mx-auto d-block rounded-circle" style="width: 200px; height: 200px;" >
+        <img src="/arrow.png" style="width: 50px; height: 30px";> <br>
+        <h5>네번째 테마 - 미술</h5>
+        <h3><%= @art_type %></h3><br>
+        <%=@users.name %>님과 좋아하는 미술이 <%= @users.art %>으로 같네요.<br>
+          <%= @art_type %>에 가보는 건 어떠세요?<br>
+         아니면   야경사진이 예쁘게 찍히기로 소문난 서울 ‘낙산공원’에 가보는 건 어떨까요?
+        
+        <a href ="https://www.google.co.kr/maps/dir/''/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%A2%85%EB%A1%9C%EA%B5%AC+%EC%9D%B4%ED%99%94%EB
+        %8F%99+%EB%82%99%EC%82%B0%EA%B8%B8+%EB%82%99%EC%82%B0%E
+        A%B3%B5%EC%9B%90/@37.5807298,126.9724411,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x357ca32d72d213e9:0x9f6263b27f9d345d!2m2!1d127.0074606!2d37.580667">->위치정보</a>
+        <img src="/2_4.jpg" class="rounded mx-auto d-block rounded-circle" style="width: 200px; height: 200px;" >
+        <img src="/arrow.png" style="width: 50px; height: 30px";> <br>
+        <h5>다섯번째 테마 - 선호하는 여행 스타일</h5>
+        <%=@users.name %>님과 좋아하는 여행스타일이 <%= @users.travelhow %>로 같네요.<br>
+        유명한 관광지인 전주 '한옥마을'에 가보는 건 어떤가요?
+        <br><br> <a class="btn btn-outline-warning" href="http://tour.jeonju.go.kr/index.9is?contentUid=9be517a74f72e96b014f8332a1e4145f" role="button" style="background-color: #FFFFFF; box-shadow: 0 2px 8px #999;"><div class="to_big">정보 더보기</div></a>
+<br><br>
+        <img src="/2_5.jpg" class="rounded mx-auto d-block rounded-circle" style="width: 200px; height: 200px;" >
+        <br><a class="btn btn-outline-warning" href="/home/four" role="button" style="background-color: #FFFFFF; box-shadow: 0 2px 8px #999;">여행을 마무리 합시다</a> <br> <br>
+
 </div>
-
-

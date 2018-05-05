@@ -1,16 +1,17 @@
-<div class= "text-middle">
+<div class= "text-middle"><div class="to_give_padding">
 
 <br><br>
 
+<div id="cover_4">
 첫번째 코스인 영화 재밌게 보셨나요?
 <br><br>
-<% if @route1 == "loco" %>
+<% if @my_genre == "loco"  %>
     달달하셨나요? ㅎㅎ 
-<% elsif @route1 =="thriller" %>
+<% elsif @my_genre =="thriller" %>
     너무 무서웠죠 ㅠ 다신 못 볼 듯
-<% elsif  @route1 == "SF" %>
+<% elsif  @my_genre == "SF" %>
     흥미진진했죠?
-<% elsif @route1 == "comedy" %>
+<% elsif @my_genre == "comedy" %>
     너무 웃겼죠? 기분 전환되셨나요?
 <% end %>
 
@@ -37,5 +38,6 @@
   </ul>
 </div>
 <br>
-<button type="button" class="btn btn-default"><a href = "/home/three_1">그렇다면 다음 코스로! </a></button> 
+<a class="btn btn-outline-warning" href="/home/three_1" role="button" style="background-color: #FFFFFF; box-shadow: 0 2px 8px #999;"><div class="to_big">그렇다면 다음 코스로!</div></a>
+</div></div>
 </div>

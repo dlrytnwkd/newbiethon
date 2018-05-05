@@ -19,23 +19,55 @@
 @font-face { font-family: 'NanumSquareRound'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'SangSangShinb7'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff') format('woff'); font-weight: normal; font-style: normal; }
 
+
 nav {
     box-shadow: 0 2px 8px #999;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0;
 }
+
 #sec_cover {
     background-color: #f0f8ff;
     text-align: center;
-    height: 1000px;
+    height: 100%;
     box-shadow: 0 2px 8px #999;
 }
 
-#third_cover {
+#cover_3 {
     background-color: #f0f8ff;
     text-align: center;
-    height: 1000px;
+    height: 100%;
+    box-shadow: 0 2px 8px #999;
+}
+#cover_3-1 {
+    background-color: #f0f8ff;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 2px 8px #999;
+}
+#cover_3-2 {
+    background-color: #f0f8ff;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 2px 8px #999;
+}
+#cover_3-3 {
+    background-color: #f0f8ff;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 2px 8px #999;
+}
+#cover_4 {
+    background-color: #f0f8ff;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 2px 8px #999;
+}
+#cover_5 {
+    background-color: #f0f8ff;
+    text-align: center;
+    height: 100%;
     box-shadow: 0 2px 8px #999;
 }
 

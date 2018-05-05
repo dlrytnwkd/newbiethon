@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20180505181505) do
   create_table "movies", force: :cascade do |t|
     t.string   "loco"
     t.string   "thriller"
-    t.string   "SF"
+    t.string   "sf"
     t.string   "comedy"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -77,15 +77,6 @@ ActiveRecord::Schema.define(version: 20180505181505) do
     t.string   "soccer"
     t.string   "skate"
     t.string   "swimming"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "travelhows", force: :cascade do |t|
-    t.string   "walk"
-    t.string   "notwalk"
-    t.string   "see"
-    t.string   "eat"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
