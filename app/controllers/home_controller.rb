@@ -60,6 +60,7 @@ class HomeController < ApplicationController
     
     my_mate.each do |mate|
        @friend_rate = mate.rating
+       
       if( @users.movie == mate.movie)
           @travel_title << @users.movie
       end
@@ -124,6 +125,7 @@ class HomeController < ApplicationController
   def rank
     
     @user_all = User.all
+    
     # @user_ranker_name
     # @user_ranker = @user_all.find(11).rating
     # i = 11

@@ -64,6 +64,12 @@ nav {
     height: 100%;
     box-shadow: 0 2px 8px #999;
 }
+#cover_last {
+    background-color: #f0f8ff;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 2px 8px #999;
+}
 #cover_5 {
     background-color: #f0f8ff;
     text-align: center;

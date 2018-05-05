@@ -9,7 +9,7 @@
 <%= @rankerNum%>
 
 <% @user_all.each do |rankers| %>
-    <p><%= rankers.rating %><p>
-        <p><%= rankers.rating.next %></p>
-    
+        <%if rankers.rating != nil %>
+        <p><%= rankers.name%> : <%= rankers.rating %>점 입니다.<p>
+        <% end %>
 <% end %>

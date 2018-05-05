@@ -92,6 +92,37 @@ nav {
     background-image: url(/travel_four.jpg);
     box-shadow: 0 2px 8px #999;
 }
+.page_last_cover {
+    box-sizing: border-box;
+    top: 0;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+    z-index: 100;
+    background-size: 100% 100%;
+    background-image: url(/last_pic.jpg);
+    box-shadow: 0 2px 8px #999;
+}
+
+.page_last_cover_2 {
+    box-sizing: border-box;
+    top: 0;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+    z-index: 100;
+    background-size: 100% 100%;
+    background-image: url(/last_2.jpg);
+    box-shadow: 0 2px 8px #999;
+}
+
+#end {
+    padding-top: 200px;
+}
 
 
 .cover_title {

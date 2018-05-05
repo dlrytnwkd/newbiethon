@@ -2,15 +2,15 @@
 <div id="cover_3-2">    
 <br><br>
     음악 잘 들으셨나요?<br>
-    <% if @my_mtype == "kpop" %>
+    <% if "#{@my_mtype}" == "kpop" %>
         참 신나죠?
-    <% elsif @my_mtype == "hiphop" %>
+    <% elsif "#{@my_mtype}" == "hiphop" %>
         예이
-    <% elsif @my_mtype == "jazz" %>
+    <% elsif "#{@my_mtype}" == "jazz" %>
         재즈는 참 흥미로워요
-    <% elsif @my_mtype == "classic" %>
+    <% elsif "#{@my_mtype}" == "classic" %>
         힐링하셨나요?
-    <% elsif @my_mtype == "ballade" %>
+    <% elsif "#{@my_mtype}" == "ballade" %>
         편안해지셨죠?
     <%end%>
 
