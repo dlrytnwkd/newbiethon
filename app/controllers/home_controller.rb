@@ -87,7 +87,7 @@ class HomeController < ApplicationController
     
     old_users.each do |userArr|
       if ( @users.workplace != userArr.workplace && userArr.location == @users.location )
-        if ( userArr.movie == @users.movie ||  userArr.sports == @users.sports || userArr.music == @users.music || userArr.travelwhere == @users.travelwhere || userArr.travelwhere == @users.travelwhere ) %>
+        if ( userArr.movie == @users.movie ||  userArr.sports == @users.sports || userArr.music == @users.music || userArr.travelwhere == @users.travelwhere || userArr.travelwhere == @users.travelwhere )
             friend.each do |i|
               friend[i] = userArr.name
             end
@@ -95,8 +95,7 @@ class HomeController < ApplicationController
           end
         end
       end
-
-  end
+    end
   
   def three
   end
