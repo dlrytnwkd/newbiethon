@@ -19,16 +19,8 @@ class HomeController < ApplicationController
     
     @users.save
     
-    @movie_title = Movie.all
-    @sport = Sport.find(Random.rand(2)+1)
-    
-    @genre = params[:movie].to_s
-  
-    @print_title = Movie.select(params[:movie]).sample(1)
-    @loco_title = Movie.find(Random.rand(2)+1).loco
-    @thriller_title = Movie.find(Random.rand(2)+1).thriller
-   # @sf_title = Movie.find(Random.rand(2)+1).sf
-    @comedy_title = Movie.find(Random.rand(2)+1).comedy
+    @movie_title = Movie.select(params[:movie]).sample()
+    @sport_name = Sport.select(params[:sports]).sample()
     
       
     
